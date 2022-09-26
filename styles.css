@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very_Dark_Blue); 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.card{
+    width: 90%;
+    max-width: 400px;
+    padding-top: 1.5rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;    background-color: var(--Dark_Blue);
+    border-radius: .825rem;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.card__img{
+    margin-bottom: 1rem;
+    background-color: hsl(212, 18%, 21%);
+    padding: 0.875rem;
+    border-radius: 50%;
+}
+
+.card__title{
+    color: var(--White);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card__text{
+    padding: 0 20px;
+}
+
+.card__copy{
+    color: var(--Light_Grey);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+ul{ 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--Light_Grey);
+    background-color: hsl(212, 24%, 22%);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:focus{
+    background-color: var(--Medium_Grey);
+    color: var(--White);
+}
+
+.btn:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.card__cta{
+    width: 100%;
+    height: 46px;
+    display: inline-block;
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    color: var(--White);
+    font-size: 1.085rem;
+    letter-spacing: .095rem;
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card__cta:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.rate{ 
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rate__img{
+    margin-top: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.rate__selected{
+    background-color: hsl(212, 24%, 22%);
+    color: var(--Orange);
+    padding: 0.625rem 1.125rem 0.3125rem 1.125rem;
+    border-radius: 3rem;
+    margin-bottom: 1.875rem;
+}
+
+.card__copy--aling{
+    padding: 0 12px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    color: var(--Light_Grey);
+  }
+  .attribution a {
+color: var(--Orange);  
+}
